@@ -16,8 +16,6 @@ public class MainConttroller {
     @Autowired
     private JdbcTemplate jdbcTemplate;
     @RequestMapping("/")
-    public String home(){
-        System.out.println(jdbcTemplate.query("select * from \"Igra\" where \"id\"=?",new IgraMapper(),5).toString());
-        return "lol";
+    public void home(){
     }
 }
