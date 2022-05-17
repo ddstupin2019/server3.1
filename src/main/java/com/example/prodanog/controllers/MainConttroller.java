@@ -17,5 +17,6 @@ public class MainConttroller {
     private JdbcTemplate jdbcTemplate;
     @RequestMapping("/")
     public void home(){
+        return "lol";
     }
 }
