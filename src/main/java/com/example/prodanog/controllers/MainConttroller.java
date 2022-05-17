@@ -16,7 +16,7 @@ public class MainConttroller {
     @Autowired
     private JdbcTemplate jdbcTemplate;
     @RequestMapping("/")
-    public void home(){
+    public String home(){
         return "lol";
     }
 }
